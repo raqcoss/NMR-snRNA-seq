@@ -1,0 +1,602 @@
+cellbender:remove-background: Command:
+cellbender remove-background --input /home/raquelcr/scanpy/raw_data/NMR3_hippocampus_raw.h5ad --output /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised.h5ad --total-droplets-included 20000
+cellbender:remove-background: CellBender 0.3.2
+cellbender:remove-background: (Workflow hash 2a72f83392)
+cellbender:remove-background: 2025-09-18 14:15:37
+cellbender:remove-background: Running remove-background
+cellbender:remove-background: Loading data from /home/raquelcr/scanpy/raw_data/NMR3_hippocampus_raw.h5ad
+cellbender:remove-background: AnnData format
+cellbender:remove-background: Using `.X` for count data.
+cellbender:remove-background: Features in dataset: 20774 Gene Expression
+cellbender:remove-background: Trimming features for inference.
+cellbender:remove-background: 18937 features have nonzero counts.
+cellbender:remove-background: Prior on counts for cells is 3539
+cellbender:remove-background: Prior on counts for empty droplets is 396
+cellbender:remove-background: Excluding 2749 features that are estimated to have <= 0.1 background counts in cells.
+cellbender:remove-background: Including 16188 features in the analysis.
+cellbender:remove-background: Trimming barcodes for inference.
+cellbender:remove-background: Excluding barcodes with counts below 198
+cellbender:remove-background: Using 2664 probable cell barcodes, plus an additional 17336 barcodes, and 77360 empty droplets.
+cellbender:remove-background: Largest surely-empty droplet has 395 UMI counts.
+cellbender:remove-background: Attempting to unpack tarball "ckpt.tar.gz" to /tmp/tmpwo_kv9fg
+cellbender:remove-background: Successfully unpacked tarball to /tmp/tmpwo_kv9fg
+/tmp/tmpwo_kv9fg/2a72f83392_random.pyro
+/tmp/tmpwo_kv9fg/2a72f83392_model.torch
+/tmp/tmpwo_kv9fg/2a72f83392_optim.torch
+/tmp/tmpwo_kv9fg/2a72f83392_optim.pyro
+/tmp/tmpwo_kv9fg/2a72f83392_params.pyro
+/tmp/tmpwo_kv9fg/2a72f83392_train.loaderstate
+/tmp/tmpwo_kv9fg/2a72f83392_test.loaderstate
+/tmp/tmpwo_kv9fg/2a72f83392_args.npy
+cellbender:remove-background: Loaded partially-trained checkpoint from ckpt.tar.gz
+cellbender:remove-background: Checkpoint loaded successfully.
+cellbender:remove-background: Running inference...
+cellbender:remove-background: [epoch 003]  average training loss: 3051.4674
+cellbender:remove-background: [epoch 004]  average training loss: 2975.4627  (702.0 seconds per epoch)
+cellbender:remove-background: Will checkpoint every 1 epochs
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 005]  average training loss: 2947.5092
+cellbender:remove-background: [epoch 005] average test loss: 2913.5708
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 006]  average training loss: 2934.6272
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 007]  average training loss: 2923.0367
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 008]  average training loss: 2916.3143
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 009]  average training loss: 2916.0080
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 010]  average training loss: 2917.8318
+cellbender:remove-background: [epoch 010] average test loss: 2886.5443
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 011]  average training loss: 2910.4166
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 012]  average training loss: 2912.3702
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 013]  average training loss: 2908.7398
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 014]  average training loss: 2907.6405
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 015]  average training loss: 2903.7043
+cellbender:remove-background: [epoch 015] average test loss: 2907.6401
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 016]  average training loss: 2901.6060
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 017]  average training loss: 2899.3838
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 018]  average training loss: 2898.9876
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 019]  average training loss: 2902.5411
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 020]  average training loss: 2896.9555
+cellbender:remove-background: [epoch 020] average test loss: 2901.3720
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 021]  average training loss: 2895.1690
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 022]  average training loss: 2896.3869
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 023]  average training loss: 2892.2118
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 024]  average training loss: 2882.8651
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 025]  average training loss: 2875.1810
+cellbender:remove-background: [epoch 025] average test loss: 2856.7551
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 026]  average training loss: 2873.1483
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 027]  average training loss: 2874.0505
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 028]  average training loss: 2872.2467
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 029]  average training loss: 2869.6842
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 030]  average training loss: 2869.8302
+cellbender:remove-background: [epoch 030] average test loss: 2852.6920
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 031]  average training loss: 2866.7564
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 032]  average training loss: 2863.4761
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 033]  average training loss: 2864.9346
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 034]  average training loss: 2862.4067
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 035]  average training loss: 2863.9456
+cellbender:remove-background: [epoch 035] average test loss: 2846.0988
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 036]  average training loss: 2865.2421
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 037]  average training loss: 2860.4500
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 038]  average training loss: 2862.2844
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 039]  average training loss: 2862.8784
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 040]  average training loss: 2860.9098
+cellbender:remove-background: [epoch 040] average test loss: 2840.5377
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 041]  average training loss: 2864.2589
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 042]  average training loss: 2860.9133
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 043]  average training loss: 2859.5899
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 044]  average training loss: 2860.7327
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 045]  average training loss: 2859.8416
+cellbender:remove-background: [epoch 045] average test loss: 2843.8109
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 046]  average training loss: 2859.1844
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 047]  average training loss: 2858.4794
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 048]  average training loss: 2857.3357
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 049]  average training loss: 2857.9133
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 050]  average training loss: 2861.8543
+cellbender:remove-background: [epoch 050] average test loss: 2830.1962
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 051]  average training loss: 2860.8421
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 052]  average training loss: 2860.8620
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 053]  average training loss: 2861.5845
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 054]  average training loss: 2862.4929
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 055]  average training loss: 2862.1778
+cellbender:remove-background: [epoch 055] average test loss: 2832.5174
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 056]  average training loss: 2866.8505
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 057]  average training loss: 2869.4124
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 058]  average training loss: 2866.1395
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 059]  average training loss: 2865.8091
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 060]  average training loss: 2871.0619
+cellbender:remove-background: [epoch 060] average test loss: 2851.3666
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 061]  average training loss: 2874.8377
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 062]  average training loss: 2877.5010
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 063]  average training loss: 2886.8220
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 064]  average training loss: 2874.5013
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 065]  average training loss: 2869.0387
+cellbender:remove-background: [epoch 065] average test loss: 2891.7572
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 066]  average training loss: 2872.3003
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 067]  average training loss: 2873.7452
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 068]  average training loss: 2875.1605
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 069]  average training loss: 2880.4723
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 070]  average training loss: 2885.5355
+cellbender:remove-background: [epoch 070] average test loss: 2904.6024
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 071]  average training loss: 2879.1777
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 072]  average training loss: 2876.1825
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 073]  average training loss: 2870.7667
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 074]  average training loss: 2876.8739
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 075]  average training loss: 2880.7181
+cellbender:remove-background: [epoch 075] average test loss: 2870.7273
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 076]  average training loss: 2875.2671
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 077]  average training loss: 2869.2250
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 078]  average training loss: 2871.9560
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 079]  average training loss: 2872.1090
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 080]  average training loss: 2866.4312
+cellbender:remove-background: [epoch 080] average test loss: 2894.3409
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 081]  average training loss: 2871.5597
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 082]  average training loss: 2877.1275
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 083]  average training loss: 2876.1012
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 084]  average training loss: 2876.1065
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 085]  average training loss: 2871.5024
+cellbender:remove-background: [epoch 085] average test loss: 2845.1900
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 086]  average training loss: 2870.1749
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 087]  average training loss: 2876.0345
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 088]  average training loss: 2874.7476
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 089]  average training loss: 2875.3182
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 090]  average training loss: 2869.1266
+cellbender:remove-background: [epoch 090] average test loss: 2862.1053
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 091]  average training loss: 2867.4581
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 092]  average training loss: 2878.4379
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 093]  average training loss: 2874.7269
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 094]  average training loss: 2877.2140
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 095]  average training loss: 2869.5123
+cellbender:remove-background: [epoch 095] average test loss: 2863.4304
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 096]  average training loss: 2867.7955
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 097]  average training loss: 2867.5446
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 098]  average training loss: 2868.9505
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 099]  average training loss: 2866.9424
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 100]  average training loss: 2867.1150
+cellbender:remove-background: [epoch 100] average test loss: 2875.8825
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 101]  average training loss: 2868.7030
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 102]  average training loss: 2863.8554
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 103]  average training loss: 2865.3202
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 104]  average training loss: 2869.4434
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 105]  average training loss: 2867.5461
+cellbender:remove-background: [epoch 105] average test loss: 2879.8866
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 106]  average training loss: 2865.6179
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 107]  average training loss: 2868.2140
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 108]  average training loss: 2866.7810
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 109]  average training loss: 2865.5656
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 110]  average training loss: 2864.8437
+cellbender:remove-background: [epoch 110] average test loss: 2871.9019
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 111]  average training loss: 2863.2444
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 112]  average training loss: 2863.0327
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 113]  average training loss: 2868.5425
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 114]  average training loss: 2867.5731
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 115]  average training loss: 2865.3639
+cellbender:remove-background: [epoch 115] average test loss: 2880.5584
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 116]  average training loss: 2865.5448
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 117]  average training loss: 2865.6618
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 118]  average training loss: 2862.9671
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 119]  average training loss: 2863.0742
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 120]  average training loss: 2868.2009
+cellbender:remove-background: [epoch 120] average test loss: 2869.1696
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 121]  average training loss: 2868.1748
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 122]  average training loss: 2868.5947
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 123]  average training loss: 2866.6868
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 124]  average training loss: 2865.9370
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 125]  average training loss: 2863.4482
+cellbender:remove-background: [epoch 125] average test loss: 2885.4104
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 126]  average training loss: 2865.5342
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 127]  average training loss: 2865.3427
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 128]  average training loss: 2861.1927
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 129]  average training loss: 2861.6995
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 130]  average training loss: 2863.9108
+cellbender:remove-background: [epoch 130] average test loss: 2877.5603
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 131]  average training loss: 2866.7371
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 132]  average training loss: 2864.3286
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 133]  average training loss: 2863.6252
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 134]  average training loss: 2858.6161
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 135]  average training loss: 2866.5848
+cellbender:remove-background: [epoch 135] average test loss: 2883.5620
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 136]  average training loss: 2863.7805
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 137]  average training loss: 2867.3969
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 138]  average training loss: 2866.2243
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 139]  average training loss: 2864.4263
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 140]  average training loss: 2866.2670
+cellbender:remove-background: [epoch 140] average test loss: 2877.7908
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 141]  average training loss: 2862.6917
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 142]  average training loss: 2865.7897
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 143]  average training loss: 2862.6312
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 144]  average training loss: 2861.2230
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 145]  average training loss: 2864.1870
+cellbender:remove-background: [epoch 145] average test loss: 2880.2548
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 146]  average training loss: 2865.3567
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 147]  average training loss: 2865.4018
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 148]  average training loss: 2863.7279
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 149]  average training loss: 2864.6218
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: [epoch 150]  average training loss: 2862.1621
+cellbender:remove-background: [epoch 150] average test loss: 2875.9253
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: 2025-09-20 14:50:39
+cellbender:remove-background: Inference procedure complete.
+cellbender:remove-background: Attempting to unpack tarball "ckpt.tar.gz" to /tmp/tmp7aiq1x0w
+cellbender:remove-background: Successfully unpacked tarball to /tmp/tmp7aiq1x0w
+/tmp/tmp7aiq1x0w/2a72f83392_random.pyro
+/tmp/tmp7aiq1x0w/2a72f83392_model.torch
+/tmp/tmp7aiq1x0w/2a72f83392_optim.torch
+/tmp/tmp7aiq1x0w/2a72f83392_optim.pyro
+/tmp/tmp7aiq1x0w/2a72f83392_params.pyro
+/tmp/tmp7aiq1x0w/2a72f83392_train.loaderstate
+/tmp/tmp7aiq1x0w/2a72f83392_test.loaderstate
+/tmp/tmp7aiq1x0w/2a72f83392_args.npy
+cellbender:remove-background: Posterior not currently included in checkpoint.
+cellbender:remove-background: Computing posterior noise count probabilities in mini-batches.
+cellbender:remove-background: Working on chunk (1/53)
+cellbender:remove-background:     [2.41 mins per chunk]
+cellbender:remove-background: Working on chunk (2/53)
+cellbender:remove-background: Working on chunk (3/53)
+cellbender:remove-background: Working on chunk (4/53)
+cellbender:remove-background: Working on chunk (5/53)
+cellbender:remove-background: Working on chunk (6/53)
+cellbender:remove-background: Working on chunk (7/53)
+cellbender:remove-background: Working on chunk (8/53)
+cellbender:remove-background: Working on chunk (9/53)
+cellbender:remove-background: Working on chunk (10/53)
+cellbender:remove-background: Working on chunk (11/53)
+cellbender:remove-background: Working on chunk (12/53)
+cellbender:remove-background: Working on chunk (13/53)
+cellbender:remove-background: Working on chunk (14/53)
+cellbender:remove-background: Working on chunk (15/53)
+cellbender:remove-background: Working on chunk (16/53)
+cellbender:remove-background: Working on chunk (17/53)
+cellbender:remove-background: Working on chunk (18/53)
+cellbender:remove-background: Working on chunk (19/53)
+cellbender:remove-background: Working on chunk (20/53)
+cellbender:remove-background: Working on chunk (21/53)
+cellbender:remove-background: Working on chunk (22/53)
+cellbender:remove-background: Working on chunk (23/53)
+cellbender:remove-background: Working on chunk (24/53)
+cellbender:remove-background: Working on chunk (25/53)
+cellbender:remove-background: Working on chunk (26/53)
+cellbender:remove-background: Working on chunk (27/53)
+cellbender:remove-background: Working on chunk (28/53)
+cellbender:remove-background: Working on chunk (29/53)
+cellbender:remove-background: Working on chunk (30/53)
+cellbender:remove-background: Working on chunk (31/53)
+cellbender:remove-background: Working on chunk (32/53)
+cellbender:remove-background: Working on chunk (33/53)
+cellbender:remove-background: Working on chunk (34/53)
+cellbender:remove-background: Working on chunk (35/53)
+cellbender:remove-background: Working on chunk (36/53)
+cellbender:remove-background: Working on chunk (37/53)
+cellbender:remove-background: Working on chunk (38/53)
+cellbender:remove-background: Working on chunk (39/53)
+cellbender:remove-background: Working on chunk (40/53)
+cellbender:remove-background: Working on chunk (41/53)
+cellbender:remove-background: Working on chunk (42/53)
+cellbender:remove-background: Working on chunk (43/53)
+cellbender:remove-background: Working on chunk (44/53)
+cellbender:remove-background: Working on chunk (45/53)
+cellbender:remove-background: Working on chunk (46/53)
+cellbender:remove-background: Working on chunk (47/53)
+cellbender:remove-background: Working on chunk (48/53)
+cellbender:remove-background: Working on chunk (49/53)
+cellbender:remove-background: Working on chunk (50/53)
+cellbender:remove-background: Working on chunk (51/53)
+cellbender:remove-background: Working on chunk (52/53)
+cellbender:remove-background: Working on chunk (53/53)
+cellbender:remove-background: Writing full posterior to /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised.h_posterior.h5
+cellbender:remove-background: Succeeded in writing posterior to file /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised.h_posterior.h5
+cellbender:remove-background: Added posterior object to checkpoint file.
+cellbender:remove-background: 2025-09-20 17:05:52
+
+cellbender:remove-background: Saved summary plots as /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised.pdf
+cellbender:remove-background: Saved cell barcodes in /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised_cell_barcodes.csv
+cellbender:remove-background: Computing target noise counts per gene for MCKP estimator
+cellbender:remove-background: Using MCKP noise targets computed for FPR 0.01
+cellbender:remove-background: Computing denoised counts using mckp estimator
+cellbender:remove-background: Working on chunk (1/4)
+cellbender:remove-background:     [1.04 mins per chunk]
+cellbender:remove-background: Working on chunk (2/4)
+cellbender:remove-background: Working on chunk (3/4)
+cellbender:remove-background: Working on chunk (4/4)
+cellbender:remove-background: 2025-09-20 17:10:55 Total MCKP estimation time = 224.80 sec
+cellbender:remove-background: Succeeded in writing CellRanger format output to file /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised.h5
+cellbender:remove-background: Succeeded in writing CellRanger format output to file /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised_filtered.h5
+cellbender:remove-background: Saved output metrics as /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised_metrics.csv
+cellbender:remove-background: Succeeded in writing report to /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised_report.html
+cellbender:remove-background: Completed remove-background.
+cellbender:remove-background: 2025-09-20 17:12:45
+
+tmp.report.nbconvert.html
+cellbender:remove-background: Succeeded in writing report to /home/raquelcr/scanpy/denoised/NMR3_hippocampus_denoised_report.html
+cellbender:remove-background: Completed remove-background.
+cellbender:remove-background: 2025-09-20 17:12:45
+

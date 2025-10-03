@@ -1,0 +1,11 @@
+name: cellbender-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+      - cellbender
+
+#Run with `conda env create -f home/raquelcr/cellbender-env.yml`

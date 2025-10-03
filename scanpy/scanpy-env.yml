@@ -1,0 +1,25 @@
+name: scanpy-env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - scanpy
+  - jupyterlab
+  - notebook
+  - numpy
+  - pandas
+  - loompy
+  - matplotlib
+  - seaborn
+  - scipy
+  - scikit-learn
+  - h5py
+  - pip
+  - pip:
+      - anndata
+      - scrublet
+      - statsmodels
+      - celltypist
+# Run on terminal `conda env create -f /home/raquelcr/scanpy/scanpy-env.yml`

@@ -1,0 +1,235 @@
+cellbender:remove-background: Command:
+cellbender remove-background --input /home/raquelcr/scanpy/raw_data/NMR2_cerebral_cortex_raw.h5ad --output /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised.h5ad --total-droplets-included 20000
+cellbender:remove-background: CellBender 0.3.2
+cellbender:remove-background: (Workflow hash 5ee380198c)
+cellbender:remove-background: 2025-09-15 13:22:48
+cellbender:remove-background: Running remove-background
+cellbender:remove-background: Loading data from /home/raquelcr/scanpy/raw_data/NMR2_cerebral_cortex_raw.h5ad
+cellbender:remove-background: AnnData format
+cellbender:remove-background: Using `.X` for count data.
+cellbender:remove-background: Features in dataset: 20774 Gene Expression
+cellbender:remove-background: Trimming features for inference.
+cellbender:remove-background: 18900 features have nonzero counts.
+cellbender:remove-background: Prior on counts for cells is 1623
+cellbender:remove-background: Prior on counts for empty droplets is 896
+cellbender:remove-background: Excluding 1494 features that are estimated to have <= 0.1 background counts in cells.
+cellbender:remove-background: Including 17406 features in the analysis.
+cellbender:remove-background: Trimming barcodes for inference.
+cellbender:remove-background: Excluding barcodes with counts below 448
+cellbender:remove-background: Using 10159 probable cell barcodes, plus an additional 9841 barcodes, and 15563 empty droplets.
+cellbender:remove-background: Largest surely-empty droplet has 884 UMI counts.
+cellbender:remove-background: Attempting to unpack tarball "ckpt.tar.gz" to /tmp/tmpnc58jcjr
+cellbender:remove-background: Successfully unpacked tarball to /tmp/tmpnc58jcjr
+/tmp/tmpnc58jcjr/5ee380198c_random.pyro
+/tmp/tmpnc58jcjr/5ee380198c_model.torch
+/tmp/tmpnc58jcjr/5ee380198c_optim.torch
+/tmp/tmpnc58jcjr/5ee380198c_optim.pyro
+/tmp/tmpnc58jcjr/5ee380198c_params.pyro
+/tmp/tmpnc58jcjr/5ee380198c_train.loaderstate
+/tmp/tmpnc58jcjr/5ee380198c_test.loaderstate
+/tmp/tmpnc58jcjr/5ee380198c_args.npy
+cellbender:remove-background: Loaded partially-trained checkpoint from ckpt.tar.gz
+cellbender:remove-background: Checkpoint loaded successfully.
+cellbender:remove-background: Running inference...
+cellbender:remove-background: [epoch 149]  average training loss: 3992.8737
+cellbender:remove-background: [epoch 150]  average training loss: 3991.9126  (1099.6 seconds per epoch)
+cellbender:remove-background: Will checkpoint every 1 epochs
+cellbender:remove-background: [epoch 150] average test loss: 3979.0968
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Saved checkpoint as /home/raquelcr/ckpt.tar.gz
+cellbender:remove-background: 2025-09-15 14:04:55
+cellbender:remove-background: Inference procedure complete.
+cellbender:remove-background: Attempting to unpack tarball "ckpt.tar.gz" to /tmp/tmpmt2hokk1
+cellbender:remove-background: Successfully unpacked tarball to /tmp/tmpmt2hokk1
+/tmp/tmpmt2hokk1/5ee380198c_random.pyro
+/tmp/tmpmt2hokk1/5ee380198c_model.torch
+/tmp/tmpmt2hokk1/5ee380198c_optim.torch
+/tmp/tmpmt2hokk1/5ee380198c_optim.pyro
+/tmp/tmpmt2hokk1/5ee380198c_params.pyro
+/tmp/tmpmt2hokk1/5ee380198c_train.loaderstate
+/tmp/tmpmt2hokk1/5ee380198c_test.loaderstate
+/tmp/tmpmt2hokk1/5ee380198c_args.npy
+cellbender:remove-background: Posterior not currently included in checkpoint.
+cellbender:remove-background: Computing posterior noise count probabilities in mini-batches.
+cellbender:remove-background: Working on chunk (1/153)
+cellbender:remove-background:     [2.72 mins per chunk]
+cellbender:remove-background: Working on chunk (2/153)
+cellbender:remove-background: Working on chunk (3/153)
+cellbender:remove-background: Working on chunk (4/153)
+cellbender:remove-background: Working on chunk (5/153)
+cellbender:remove-background: Working on chunk (6/153)
+cellbender:remove-background: Working on chunk (7/153)
+cellbender:remove-background: Working on chunk (8/153)
+cellbender:remove-background: Working on chunk (9/153)
+cellbender:remove-background: Working on chunk (10/153)
+cellbender:remove-background: Working on chunk (11/153)
+cellbender:remove-background: Working on chunk (12/153)
+cellbender:remove-background: Working on chunk (13/153)
+cellbender:remove-background: Working on chunk (14/153)
+cellbender:remove-background: Working on chunk (15/153)
+cellbender:remove-background: Working on chunk (16/153)
+cellbender:remove-background: Working on chunk (17/153)
+cellbender:remove-background: Working on chunk (18/153)
+cellbender:remove-background: Working on chunk (19/153)
+cellbender:remove-background: Working on chunk (20/153)
+cellbender:remove-background: Working on chunk (21/153)
+cellbender:remove-background: Working on chunk (22/153)
+cellbender:remove-background: Working on chunk (23/153)
+cellbender:remove-background: Working on chunk (24/153)
+cellbender:remove-background: Working on chunk (25/153)
+cellbender:remove-background: Working on chunk (26/153)
+cellbender:remove-background: Working on chunk (27/153)
+cellbender:remove-background: Working on chunk (28/153)
+cellbender:remove-background: Working on chunk (29/153)
+cellbender:remove-background: Working on chunk (30/153)
+cellbender:remove-background: Working on chunk (31/153)
+cellbender:remove-background: Working on chunk (32/153)
+cellbender:remove-background: Working on chunk (33/153)
+cellbender:remove-background: Working on chunk (34/153)
+cellbender:remove-background: Working on chunk (35/153)
+cellbender:remove-background: Working on chunk (36/153)
+cellbender:remove-background: Working on chunk (37/153)
+cellbender:remove-background: Working on chunk (38/153)
+cellbender:remove-background: Working on chunk (39/153)
+cellbender:remove-background: Working on chunk (40/153)
+cellbender:remove-background: Working on chunk (41/153)
+cellbender:remove-background: Working on chunk (42/153)
+cellbender:remove-background: Working on chunk (43/153)
+cellbender:remove-background: Working on chunk (44/153)
+cellbender:remove-background: Working on chunk (45/153)
+cellbender:remove-background: Working on chunk (46/153)
+cellbender:remove-background: Working on chunk (47/153)
+cellbender:remove-background: Working on chunk (48/153)
+cellbender:remove-background: Working on chunk (49/153)
+cellbender:remove-background: Working on chunk (50/153)
+cellbender:remove-background: Working on chunk (51/153)
+cellbender:remove-background: Working on chunk (52/153)
+cellbender:remove-background: Working on chunk (53/153)
+cellbender:remove-background: Working on chunk (54/153)
+cellbender:remove-background: Working on chunk (55/153)
+cellbender:remove-background: Working on chunk (56/153)
+cellbender:remove-background: Working on chunk (57/153)
+cellbender:remove-background: Working on chunk (58/153)
+cellbender:remove-background: Working on chunk (59/153)
+cellbender:remove-background: Working on chunk (60/153)
+cellbender:remove-background: Working on chunk (61/153)
+cellbender:remove-background: Working on chunk (62/153)
+cellbender:remove-background: Working on chunk (63/153)
+cellbender:remove-background: Working on chunk (64/153)
+cellbender:remove-background: Working on chunk (65/153)
+cellbender:remove-background: Working on chunk (66/153)
+cellbender:remove-background: Working on chunk (67/153)
+cellbender:remove-background: Working on chunk (68/153)
+cellbender:remove-background: Working on chunk (69/153)
+cellbender:remove-background: Working on chunk (70/153)
+cellbender:remove-background: Working on chunk (71/153)
+cellbender:remove-background: Working on chunk (72/153)
+cellbender:remove-background: Working on chunk (73/153)
+cellbender:remove-background: Working on chunk (74/153)
+cellbender:remove-background: Working on chunk (75/153)
+cellbender:remove-background: Working on chunk (76/153)
+cellbender:remove-background: Working on chunk (77/153)
+cellbender:remove-background: Working on chunk (78/153)
+cellbender:remove-background: Working on chunk (79/153)
+cellbender:remove-background: Working on chunk (80/153)
+cellbender:remove-background: Working on chunk (81/153)
+cellbender:remove-background: Working on chunk (82/153)
+cellbender:remove-background: Working on chunk (83/153)
+cellbender:remove-background: Working on chunk (84/153)
+cellbender:remove-background: Working on chunk (85/153)
+cellbender:remove-background: Working on chunk (86/153)
+cellbender:remove-background: Working on chunk (87/153)
+cellbender:remove-background: Working on chunk (88/153)
+cellbender:remove-background: Working on chunk (89/153)
+cellbender:remove-background: Working on chunk (90/153)
+cellbender:remove-background: Working on chunk (91/153)
+cellbender:remove-background: Working on chunk (92/153)
+cellbender:remove-background: Working on chunk (93/153)
+cellbender:remove-background: Working on chunk (94/153)
+cellbender:remove-background: Working on chunk (95/153)
+cellbender:remove-background: Working on chunk (96/153)
+cellbender:remove-background: Working on chunk (97/153)
+cellbender:remove-background: Working on chunk (98/153)
+cellbender:remove-background: Working on chunk (99/153)
+cellbender:remove-background: Working on chunk (100/153)
+cellbender:remove-background: Working on chunk (101/153)
+cellbender:remove-background: Working on chunk (102/153)
+cellbender:remove-background: Working on chunk (103/153)
+cellbender:remove-background: Working on chunk (104/153)
+cellbender:remove-background: Working on chunk (105/153)
+cellbender:remove-background: Working on chunk (106/153)
+cellbender:remove-background: Working on chunk (107/153)
+cellbender:remove-background: Working on chunk (108/153)
+cellbender:remove-background: Working on chunk (109/153)
+cellbender:remove-background: Working on chunk (110/153)
+cellbender:remove-background: Working on chunk (111/153)
+cellbender:remove-background: Working on chunk (112/153)
+cellbender:remove-background: Working on chunk (113/153)
+cellbender:remove-background: Working on chunk (114/153)
+cellbender:remove-background: Working on chunk (115/153)
+cellbender:remove-background: Working on chunk (116/153)
+cellbender:remove-background: Working on chunk (117/153)
+cellbender:remove-background: Working on chunk (118/153)
+cellbender:remove-background: Working on chunk (119/153)
+cellbender:remove-background: Working on chunk (120/153)
+cellbender:remove-background: Working on chunk (121/153)
+cellbender:remove-background: Working on chunk (122/153)
+cellbender:remove-background: Working on chunk (123/153)
+cellbender:remove-background: Working on chunk (124/153)
+cellbender:remove-background: Working on chunk (125/153)
+cellbender:remove-background: Working on chunk (126/153)
+cellbender:remove-background: Working on chunk (127/153)
+cellbender:remove-background: Working on chunk (128/153)
+cellbender:remove-background: Working on chunk (129/153)
+cellbender:remove-background: Working on chunk (130/153)
+cellbender:remove-background: Working on chunk (131/153)
+cellbender:remove-background: Working on chunk (132/153)
+cellbender:remove-background: Working on chunk (133/153)
+cellbender:remove-background: Working on chunk (134/153)
+cellbender:remove-background: Working on chunk (135/153)
+cellbender:remove-background: Working on chunk (136/153)
+cellbender:remove-background: Working on chunk (137/153)
+cellbender:remove-background: Working on chunk (138/153)
+cellbender:remove-background: Working on chunk (139/153)
+cellbender:remove-background: Working on chunk (140/153)
+cellbender:remove-background: Working on chunk (141/153)
+cellbender:remove-background: Working on chunk (142/153)
+cellbender:remove-background: Working on chunk (143/153)
+cellbender:remove-background: Working on chunk (144/153)
+cellbender:remove-background: Working on chunk (145/153)
+cellbender:remove-background: Working on chunk (146/153)
+cellbender:remove-background: Working on chunk (147/153)
+cellbender:remove-background: Working on chunk (148/153)
+cellbender:remove-background: Working on chunk (149/153)
+cellbender:remove-background: Working on chunk (150/153)
+cellbender:remove-background: Working on chunk (151/153)
+cellbender:remove-background: Working on chunk (152/153)
+cellbender:remove-background: Working on chunk (153/153)
+cellbender:remove-background: Writing full posterior to /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised.h_posterior.h5
+cellbender:remove-background: Succeeded in writing posterior to file /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised.h_posterior.h5
+cellbender:remove-background: Added posterior object to checkpoint file.
+cellbender:remove-background: 2025-09-15 21:14:25
+
+cellbender:remove-background: Saved summary plots as /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised.pdf
+cellbender:remove-background: Saved cell barcodes in /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised_cell_barcodes.csv
+cellbender:remove-background: Computing target noise counts per gene for MCKP estimator
+cellbender:remove-background: Using MCKP noise targets computed for FPR 0.01
+cellbender:remove-background: Computing denoised counts using mckp estimator
+cellbender:remove-background: Working on chunk (1/4)
+cellbender:remove-background:     [1.95 mins per chunk]
+cellbender:remove-background: Working on chunk (2/4)
+cellbender:remove-background: Working on chunk (3/4)
+cellbender:remove-background: Working on chunk (4/4)
+cellbender:remove-background: 2025-09-15 21:22:18 Total MCKP estimation time = 393.04 sec
+cellbender:remove-background: Succeeded in writing CellRanger format output to file /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised.h5
+cellbender:remove-background: Succeeded in writing CellRanger format output to file /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised_filtered.h5
+cellbender:remove-background: Saved output metrics as /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised_metrics.csv
+cellbender:remove-background: Succeeded in writing report to /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised_report.html
+cellbender:remove-background: Completed remove-background.
+cellbender:remove-background: 2025-09-15 21:24:05
+
+report.nbconvert.html
+cellbender:remove-background: Succeeded in writing report to /home/raquelcr/scanpy/denoised/NMR2_cerebral_cortex_denoised_report.html
+cellbender:remove-background: Completed remove-background.
+cellbender:remove-background: 2025-09-15 21:24:05
+

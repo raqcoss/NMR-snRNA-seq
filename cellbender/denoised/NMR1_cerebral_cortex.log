@@ -1,0 +1,41 @@
+cellbender:remove-background: Command:
+cellbender remove-background --input /home/raquelcr/scanpy/raw_data/NMR1_cerebral_cortex.h5ad --output /home/raquelcr/scanpy/clean_data/NMR1_cerebral_cortex.h5ad --total-droplets-included 20000
+cellbender:remove-background: CellBender 0.3.2
+cellbender:remove-background: (Workflow hash 0235c09124)
+cellbender:remove-background: 2025-09-13 23:01:03
+cellbender:remove-background: Running remove-background
+cellbender:remove-background: Loading data from /home/raquelcr/scanpy/raw_data/NMR1_cerebral_cortex.h5ad
+cellbender:remove-background: AnnData format
+cellbender:remove-background: Using `.X` for count data.
+cellbender:remove-background: Features in dataset: 20774 Gene Expression
+cellbender:remove-background: Trimming features for inference.
+cellbender:remove-background: 18440 features have nonzero counts.
+cellbender:remove-background: Prior on counts for cells is 1644
+cellbender:remove-background: Prior on counts for empty droplets is 355
+cellbender:remove-background: Excluding 2047 features that are estimated to have <= 0.1 background counts in cells.
+cellbender:remove-background: Including 16393 features in the analysis.
+cellbender:remove-background: Trimming barcodes for inference.
+cellbender:remove-background: Excluding barcodes with counts below 177
+cellbender:remove-background: Using 6601 probable cell barcodes, plus an additional 13399 barcodes, and 57063 empty droplets.
+cellbender:remove-background: Largest surely-empty droplet has 353 UMI counts.
+cellbender:remove-background: Attempting to unpack tarball "ckpt.tar.gz" to /tmp/tmpsywwb4o_
+cellbender:remove-background: Successfully unpacked tarball to /tmp/tmpsywwb4o_
+/tmp/tmpsywwb4o_/5ee380198c_random.pyro
+/tmp/tmpsywwb4o_/5ee380198c_model.torch
+/tmp/tmpsywwb4o_/5ee380198c_optim.torch
+/tmp/tmpsywwb4o_/5ee380198c_optim.pyro
+/tmp/tmpsywwb4o_/5ee380198c_params.pyro
+/tmp/tmpsywwb4o_/5ee380198c_train.loaderstate
+/tmp/tmpsywwb4o_/5ee380198c_test.loaderstate
+/tmp/tmpsywwb4o_/5ee380198c_args.npy
+cellbender:remove-background: Workflow hash does not match that of checkpoint.
+cellbender:remove-background: No checkpoint loaded.
+cellbender:remove-background: Running inference...
+cellbender:remove-background: Inference procedure stopped by keyboard interrupt... will save a checkpoint.
+cellbender:remove-background: Saving a checkpoint...
+cellbender:remove-background: Keyboard interrupt: will not save checkpoint
+cellbender:remove-background: 2025-09-13 23:01:45
+cellbender:remove-background: Inference procedure complete.
+cellbender:remove-background: Attempting to unpack tarball "ckpt.tar.gz" to /tmp/tmpsd29jls9
+cellbender:remove-background: Keyboard interrupt.  Terminated without saving.
+
